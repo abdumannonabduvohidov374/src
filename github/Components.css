@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard {
+    width: 5%;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: sticky;
+    left: 0;
+    z-index: 100;
+    background: #1e1e1e;
+    color: white;
+    transition: 0.3s ease all;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#root {
+    margin: 0;
+    padding: 0;
+}
+.dashboard.active {
+    width: 25%;
+}
+.menu-btn {
+    background: red;
+    width: 50px;
+    height: 50px;
+}
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: #1e1e1e;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+}
+.dashmenu {
+    display: flex;
+}
+.dash-menu,
+.widgets-menu {
+    width: 100%;
+}
+.name {
+    display: none;
+}
+.name.active {
+    display: block;
+}
+.btns {
+    display: flex;
+    width: 100% !important;
+    cursor: pointer;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease all;
+    padding: 0 20px;
+    color: rgb(152, 152, 152);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.btns:hover {
+    background: rgba(255, 255, 255, 0.048);
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.lefti {
+    padding-left: 20px;
+}
+.flex {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.dash {
+    padding: 20px;
+    font-size: 13px;
+    color: gray;
+}
+.svg {
+    padding: 20px;
+}
+.collapce {
+    height: 0;
+    width: 100%;
+    background: red;
+    transition: 0.3s ease all;
+}
+.collapce > p {
+    transition: 0.3s ease all;
+    font-size: 0;
+}
+.collapce.active {
+    height: 200px;
+}
+.collapce.active > p {
+    font-size: 16px;
+}
+#rotate180 {
+    transition: 0.3s ease all;
+    transform: rotate(180deg);
+}
